@@ -12,11 +12,21 @@ Video Camera Classification using p5.js
 // Initialize the ImageNet method with the MobileNet model.
 const classifier = new ml5.ImageClassifier('MobileNet');
 let video;
+var constraints;
+
+
 
 function setup() {
   noCanvas();
+
+  var constraints = {
+    audio: false,
+    video: {
+      facingMode: "user"
+    }
+  };
   // Load the camera and call guess() once it has loaded.
-  video = createCapture(VIDEO, guess);
+  video = createCapture(constraints, guess);
 }
 
 // Get a prediction for the current video frame
