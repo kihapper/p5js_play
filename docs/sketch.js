@@ -42,5 +42,5 @@ function gotResult(results) {
   select('#result_4').html(results[4].label);
   select('#probability_4').html(nf(results[4].probability, 0, 2));
     
-  setTimeout(guess, 250);
+  setTimeout(guess, 500);
 }

@@ -1,13 +1,16 @@
-var capture;
-
 function setup() {
-  //createCanvas(390, 240);
-  capture = createCapture(VIDEO);
-  capture.size(320, 240);
-}
-
-function draw() {
-  background(255);
-  //image(capture, 0, 0, 320, 240);
-  //filter('INVERT');
+  createCanvas(480, 120);
+  var constraints = {
+    video: {
+      mandatory: {
+        minWidth: 1280,
+        minHeight: 720
+      },
+      optional: [{ maxFrameRate: 10 }]
+    },
+    audio: true
+  };
+  createCapture(constraints, function(stream) {
+    console.log(stream);
+  });
 }
