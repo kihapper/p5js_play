@@ -1,10 +1,10 @@
 function setup() {
-  createCanvas(480, 120);
+  createCanvas(320, 180);
   var constraints = {
     video: {
       mandatory: {
-        minWidth: 1280,
-        minHeight: 720
+        minWidth: 320,
+        minHeight: 180
       },
       optional: [{ maxFrameRate: 10 }]
     },
