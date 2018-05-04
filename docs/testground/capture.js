@@ -8,7 +8,7 @@ function setup() {
       },
       optional: [{ maxFrameRate: 10 }]
     },
-    audio: true
+    audio: false
   };
   createCapture(constraints, function(stream) {
     console.log(stream);
