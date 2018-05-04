@@ -15,7 +15,6 @@ let video;
 var constraints;
 
 
-
 function setup() {
   noCanvas();
 
