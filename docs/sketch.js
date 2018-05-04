@@ -21,7 +21,7 @@ function setup() {
   var constraints = {
     audio: false,
     video: {
-      facingMode: "user"
+      facingMode: "environment"
     }
   };
   // Load the camera and call guess() once it has loaded.
