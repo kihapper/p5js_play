@@ -12,8 +12,9 @@ function setup() {
     }
   };
   capture = createCapture(constraints);
+  capture.hide();
 }
 function draw() {
   image(capture, 0, 0, windowWidth, windowHeight);
-  // filter(INVERT); // ;-)
+  filter(INVERT);
 }
