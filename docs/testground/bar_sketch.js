@@ -8,14 +8,15 @@ function setup() {
   frameRate(30);
 }
 
-
 function draw() { 
   background(backC);   // Set the background to black
-  y = y - 1; 
+  y = y - 5; 
   if (y < 0) { 
     y = height; 
   } 
   line(0, y, width, y);  
+  fill(y);
+  ellipse(windowWidth/2, windowHeight/2, 100, 100);
 } 
 
 
