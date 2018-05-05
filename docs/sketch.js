@@ -35,6 +35,7 @@ var word_probability_5;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  background(0);
   frameRate(15);
   var constraints = {
     audio: false,
@@ -89,13 +90,18 @@ function draw() {
   text(word_5, windowWidth*0.2, windowHeight*0.6);
   text(word_probability_5, windowWidth*0.1, windowHeight*0.6);
 
-  //guess();
+  //guess(); NEVER PUT THIS HERE>..
 
 }
 
 // Get a prediction for the current video frame
 function guess() {
   classifier.predict(video.elt, 5, gotResult);
+}
+
+function mouseReleased() {
+  var fs = fullscreen();
+  fullscreen(!fs);
 }
 
 function gotResult(results) {
