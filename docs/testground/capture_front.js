@@ -5,9 +5,10 @@ function setup() {
   var constraints = {
     audio: false,
     video: {
-      minWidth: windowWidth,
-      minHeight: windowHeight,
-      facingMode: "environment"
+      //minWidth: windowWidth,
+      //minHeight: windowHeight,
+      facingMode: "environment",
+      frameRate: 10
     }
   };
   capture = createCapture(constraints);
