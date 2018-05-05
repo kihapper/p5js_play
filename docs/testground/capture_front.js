@@ -16,5 +16,5 @@ function setup() {
 }
 function draw() {
   image(capture, 0, 0, windowWidth, windowHeight);
-  filter(INVERT);
+  //filter(INVERT);
 }

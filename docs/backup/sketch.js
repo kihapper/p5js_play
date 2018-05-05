@@ -16,8 +16,7 @@ var constraints;
 
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background(100,255,100);
+  
   var constraints = {
     audio: false,
     video: {
@@ -27,7 +26,6 @@ function setup() {
   };
   // Load the camera and call guess() once it has loaded.
   video = createCapture(constraints, guess);
-  video.hide();
 }
 
 // Get a prediction for the current video frame
