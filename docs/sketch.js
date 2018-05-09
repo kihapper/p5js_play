@@ -46,6 +46,7 @@ function setup() {
   };
   // Load the camera and call guess() once it has loaded.
   video = createCapture(constraints, guess);
+  video.elt.setAttribute('playsinline', '');
   video.hide();
 
   word_1 = 'Now loading...';
