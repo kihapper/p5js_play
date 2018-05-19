@@ -17,6 +17,16 @@ function draw() {
   line(0, y, width, y);  
   fill(y);
   ellipse(windowWidth/2, windowHeight/2, 100, 100);
+
+
+  var string = 'Hello p5js*! Hello world!';
+  var regexp = 'Hello';
+  var josh =   matchAll(string, regexp);
+  console.log(josh);
+  if(josh.length == 0) {
+    console.log("Y5555ESSSSS");
+  }
+
 } 
 
 

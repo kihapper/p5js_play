@@ -5,13 +5,13 @@ function setup() {
   var constraints = {
     audio: false,
     video: {
-      //minWidth: windowWidth,
-      //minHeight: windowHeight,
+
       facingMode: "environment",
       frameRate: 10
     }
   };
   capture = createCapture(constraints);
+  capture.elt.setAttribute('playsinline', '');
   capture.hide();
 }
 function draw() {

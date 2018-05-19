@@ -91,6 +91,17 @@ function draw() {
   text(word_5, windowWidth*0.2, windowHeight*0.6);
   text(word_probability_5, windowWidth*0.1, windowHeight*0.6);
 
+  
+  var targert_word = 'toilet';
+  var match_check =   matchAll(word_1, targert_word);
+  console.log(match_check);
+  if(match_check.length >= 1) {
+    console.log("YEAAAHHH");
+    fill(0,0,255);
+    ellipse(windowWidth/2, windowHeight/2, 100, 100);
+  } 
+
+  
   //guess(); NEVER PUT THIS HERE>..
 
 }
