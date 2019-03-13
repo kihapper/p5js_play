@@ -59,7 +59,7 @@ function setup() {
   word_probability_4 = '%';  
   word_5 = 'Now loading...';
   word_probability_5 = '%';
-  Title_text = 'phonvert.ai'
+  Title_text = 'Waag AI Culture Lab - Image Classification'
 
 
 }
